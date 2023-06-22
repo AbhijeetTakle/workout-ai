@@ -1,0 +1,21 @@
+.main-auth {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-options {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+}
+
+#auth-login > input,
+#auth-register > input {
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  margin: 3px;
+}

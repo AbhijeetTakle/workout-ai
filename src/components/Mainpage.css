@@ -1,0 +1,31 @@
+.main-container > h1 {
+  font-size: 3rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.button-container > button,
+.button-container > button > a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: blue;
+  border-radius: 0.3rem;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  overflow: scroll;
+  justify-content: center;
+}
+
+.personal-info > h4 {
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

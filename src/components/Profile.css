@@ -1,0 +1,25 @@
+.update-form > form > input,
+.update-form > form > label,
+.update-form > form > select {
+  font-size: 1.3rem;
+  width: 400px;
+}
+
+.update-form > form > input,
+.update-form > form > select {
+  margin-bottom: 20px;
+}
+
+.update-form > form > label {
+  text-align: start;
+}
+
+.update-form > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submit-btn {
+  width: 100px;
+}

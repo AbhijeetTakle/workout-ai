@@ -1,0 +1,45 @@
+.user-div {
+  width: 200px;
+  background-color: rgb(22, 89, 152);
+  margin: 0 10px;
+  border-radius: 1rem;
+}
+
+.user-div > p {
+  font-size: 0.8rem;
+  color: aliceblue;
+}
+
+.users-container {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  width: 100%;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  border-style: solid;
+  width: 60%;
+  background-color: rgb(202, 202, 202);
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 95%;
+}
+
+.message {
+  width: fit-content;
+  border-radius: 2rem;
+  padding: 0.3rem;
+}
+
+.message > p {
+  color: azure;
+}
