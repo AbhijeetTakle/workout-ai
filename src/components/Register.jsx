@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getFirestore, collection, addDoc, getDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import app from "../firebaseSetup";
 import { auth } from "../firebaseSetup";

@@ -34,7 +34,7 @@ const Profile = (props) => {
     } else {
       getUserInfo(props.user);
     }
-  }, []);
+  }, [db, props.user]);
 
   const updateUser = async (e) => {
     e.preventDefault();

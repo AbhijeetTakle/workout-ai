@@ -28,7 +28,7 @@ const Mainpage = (props) => {
         });
     };
     getUser();
-  }, []);
+  }, [db, props.user]);
   const handleLogout = (e) => {
     localStorage.removeItem("user");
     props.setUser(null);

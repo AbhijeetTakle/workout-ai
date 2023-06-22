@@ -34,7 +34,7 @@ const Chat = (props) => {
     };
     getUsers();
     setSender(props.user);
-  }, []);
+  }, [props.user, db]);
 
   const getMessages = async () => {
     const q = query(
@@ -88,6 +88,7 @@ const Chat = (props) => {
                 </button>
               </div>
             );
+          else return "";
         })}
       </div>
       <div className="chat-container">
