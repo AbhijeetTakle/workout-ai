@@ -50,7 +50,7 @@ const Mainpage = (props) => {
           <h4>Name: {user.Name}</h4>
           <h4>Email: {user.email}</h4>
           <h4>Date of birth: {user.dob}</h4>
-          <h4>Gender: {user.Gender}</h4>
+          <h4>Gender: {user.gender}</h4>
           <h4>height: {user.height}</h4>
           <h4>weight: {user.weight}</h4>
           <h4>disease: {user.disease}</h4>

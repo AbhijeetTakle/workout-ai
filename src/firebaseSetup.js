@@ -1,15 +1,14 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import env from "react-dotenv";
 
 const firebaseConfig = {
-  apiKey: env.firebase_apiKey,
-  authDomain: env.firebase_authDomain,
-  projectId: env.firebase_projectId,
-  storageBucket: env.firebase_storageBucket,
-  messagingSenderId: env.firebase_messagingSenderId,
-  appId: env.firebase_appId,
-  measurementId: env.firebase_measurementId,
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGESENDERID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREMENTID,
 };
 
 const app = initializeApp(firebaseConfig);

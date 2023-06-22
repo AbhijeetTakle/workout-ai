@@ -45,12 +45,11 @@ const Profile = (props) => {
           updateDoc(doc(db, "users", userd.id), {
             email: userData.email,
             Name: userData.name,
-            photoURL: userData.photoURL,
             uid: userData.uid,
             height: userData.height,
             weight: userData.weight,
             dob: userData.dob,
-            gender: "male",
+            gender: userData.gender,
             disease: userData.disease,
             intensity: userData.intensity,
           })
@@ -109,6 +108,12 @@ const Profile = (props) => {
               name="weight"
               defaultValue={user.weight}
             />
+            <label htmlFor="gender">Gender </label>
+            <select id="gender" name="gender" defaultValue={0}>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">Others</option>
+            </select>
             <label htmlFor="dob">Date of Birth: </label>
             <input id="dob" type="date" name="dob" defaultValue={user.dob} />
             <label htmlFor="disease">Any form of Disease: </label>

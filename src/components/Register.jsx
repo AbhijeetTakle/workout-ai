@@ -25,7 +25,7 @@ const Register = (props) => {
             height: userData.height,
             weight: userData.weight,
             dob: userData.dob,
-            gender: "male",
+            gender: userData.gender,
             disease: userData.disease,
             intensity: userData.intensity,
           })
@@ -77,6 +77,12 @@ const Register = (props) => {
         <input id="weight" type="number" name="weight" />
         <label htmlFor="dob">Date of Birth: </label>
         <input id="dob" type="date" name="dob" />
+        <label htmlFor="gender">Gender </label>
+        <select id="gender" name="gender" defaultValue={0}>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>
         <label htmlFor="disease">Any form of Disease: </label>
         <select id="disease" name="disease" defaultValue={0}>
           <option value="none">None</option>
